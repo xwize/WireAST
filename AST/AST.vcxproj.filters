@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Char.cpp" />
+    <ClCompile Include="Lexer.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Parser.cpp" />
+    <ClCompile Include="Parser_descent.cpp" />
+    <ClCompile Include="Parser_error.cpp" />
+    <ClCompile Include="Ref.cpp">
+      <Filter>Ref</Filter>
+    </ClCompile>
+    <ClCompile Include="Symbol_scope.cpp" />
+    <ClCompile Include="Symbol.cpp" />
+    <ClCompile Include="Parser_ast.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="Engine_execute.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AST.h" />
+    <ClInclude Include="Char.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="Lexer.h" />
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="Ref.h">
+      <Filter>Ref</Filter>
+    </ClInclude>
+    <ClInclude Include="Dict.h" />
+    <ClInclude Include="Symbol.h" />
+    <ClInclude Include="Parser_ast.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Grammar.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Ref">
+      <UniqueIdentifier>{d57dac5b-12a1-4974-8447-69efb9255fd9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

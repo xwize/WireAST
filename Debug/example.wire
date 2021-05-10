@@ -1,0 +1,49 @@
+// Test
+function fib(t) {
+	a = 0;
+	b = 1;
+	while(t) {
+		b = a + b;
+		a = b - a;
+		t--;
+	}
+	
+	return a;
+}
+
+function fib_r(t) {
+	if(!t)
+		return 0;
+	
+	if(!(t - 1))
+		return 1;
+	
+	return fib_r(t - 2) + fib_r(t - 1);
+}
+
+function main() {
+	x = fib(12);
+	println(x);
+
+	x = fib_r(11);
+	println(x);
+}
+
+main();
+
+//x = f(7);
+//x = f(x + x);
+//p(x);
+
+// Strings
+// Return statements
+// Break statements
+// Full identifiers and integer literals
+// Relational
+// Equality
+// Function references
+// Runtime errors
+// Freeze
+// Test suite
+// Integration
+
