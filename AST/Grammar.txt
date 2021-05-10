@@ -1,0 +1,19 @@
+# Terminals
+identifier = alpha_num
+integer_literal = digit
+
+# Non-Terminals v2
+primary = identifier | integer_literal | "(" expression ")"
+expression = assignmentExpression
+lhsExpression = primary | callExpression;
+assignmentExpression = (lhsExpression "=" assignmentExpression) | addExpression
+addExpression = lhsExpression {"+" lhsExpression}
+expressionStatement = expression ";"
+statement = (block | ifStatement | functionStatement | expressionStatement)
+block = "{" {statement} "}"
+functionStatement = "def" identifier "(" {defParams} ")" block;
+defParams = identifier {"," identifier}
+callExpression = identifier "(" {argsList} ")"
+argsList = assignmentExpression {"," assignmentExpression}
+ifStatement = "if" "(" expression ")" statement
+whilteStatement = "while" "(" expression ")" statement
